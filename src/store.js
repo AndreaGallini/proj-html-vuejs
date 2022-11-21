@@ -38,5 +38,39 @@ export const store = reactive({
         '/images/perfect-cosmopolitan-460x295.jpg',
         '/images/r-brooke-lark-96398-unsplash-min-460x295.jpg',
         '/images/fi2x-6-460x295.jpg',
-    ]
+    ],
+    culinaryCollection: [
+        {
+            image: '/images/drinks-recipes.png',
+            title:'drinks',
+        },
+        {
+            image: '/images/soups-recipes.png',
+            title:'soups',
+        },
+        {
+            image: '/images/baking-recipes.png',
+            title:'bakery',
+        },
+        {
+            image: '/images/dinner-recipes.png',
+            title:'dinner',
+        },
+        {
+            image: '/images/healthy-recipes.png',
+            title:'healty',
+        },
+        {
+            image: '/images/staff-picks.png',
+            title:'staff picks',
+        },
+        {
+            image: '/images/premium-recipes.png',
+            title:'appetisers',
+        },
+        {
+            image: '/images/quick-easy-recipes.png',
+            title:'quick & easy',
+      },
+    ],
 });
