@@ -1,9 +1,13 @@
 <template>
-  <div></div>
+  <div>
+    <JumboComponent />
+  </div>
 </template>
 
 <script>
-export default {};
+import JumboComponent from "./MainComponents/JumboComponent.vue";
+
+export default { components: { JumboComponent } };
 </script>
 
 <style lang="scss" scoped></style>
