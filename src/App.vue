@@ -28,4 +28,8 @@ export default {
 header {
   background-color: $secondaryBackground;
 }
+main,
+footer {
+  background-color: $mainBackground;
+}
 </style>

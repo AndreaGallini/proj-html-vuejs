@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="maincomponent">
     <JumboComponent />
-    <FoodieJournalComponent />
+    <div class="main">
+      <FoodieJournalComponent />
+    </div>
   </div>
 </template>
 
@@ -17,4 +19,12 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+@use "../assets/partials/partials" as *;
+.main {
+  position: relative;
+}
+.maincomponent {
+  background-color: $mainBackground;
+}
+</style>
