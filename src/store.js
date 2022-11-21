@@ -29,4 +29,14 @@ export const store = reactive({
       }          
 
     ],
+    popularRecipes: [
+        '/images/Mixed-fruits-460x295.jpg',
+        '/images/r-rachel-park-366508-unsplash-min-460x295.jpg',
+        '/images/r-michelle-tsang-500721-unsplash-min-460x295.jpg',
+        '/images/quick-summer-drink-460x295.jpg',
+        '/images/r-maarten-van-den-heuvel-400626-unsplash-min-460x295.jpg',
+        '/images/perfect-cosmopolitan-460x295.jpg',
+        '/images/r-brooke-lark-96398-unsplash-min-460x295.jpg',
+        '/images/fi2x-6-460x295.jpg',
+    ]
 });
