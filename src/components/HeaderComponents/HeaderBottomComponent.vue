@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { store } from "../store";
+import { store } from "../../store";
 export default {
   data() {
     return {
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use "../assets/partials/partials" as *;
+@use "../../assets/partials/partials" as *;
 
 ul {
   list-style: none;

@@ -8,9 +8,9 @@
 
 <script>
 import { store } from "../store";
-import HeaderBottomComponent from "./HeaderBottomComponent.vue";
-import HeaderTopComponent from "./HeaderTopComponent.vue";
-import LogoComponent from "./LogoComponent.vue";
+import HeaderBottomComponent from "./HeaderComponents/HeaderBottomComponent.vue";
+import HeaderTopComponent from "./HeaderComponents/HeaderTopComponent.vue";
+import LogoComponent from "./HeaderComponents/LogoComponent.vue";
 export default {
   components: {
     HeaderTopComponent,

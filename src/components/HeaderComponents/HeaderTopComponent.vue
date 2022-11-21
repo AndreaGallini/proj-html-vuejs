@@ -19,7 +19,7 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-@use "../assets/partials/partials" as *;
+@use "../../assets/partials/partials" as *;
 i {
   color: $iconColor;
   padding: 0 1rem;
