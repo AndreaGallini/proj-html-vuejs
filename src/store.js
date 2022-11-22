@@ -73,4 +73,36 @@ export const store = reactive({
             title:'quick & easy',
       },
     ],
+    PostsArray: [
+        {
+            img: '/images/fi-roundup-200x132.jpg',
+            title: 'Roundup : My new Favorite reciper for healthy living',
+            date:'By admin | March 25th, 2019',
+        },
+        {
+            img: '/images/fi-korean-food-200x132.jpg',
+            title: 'Meal Prep : Korean Bibimbap with Kinchi',
+            date:'By admin | March 25th, 2019',
+        },
+        {
+            img: '/images/fi-toasts-600x395.jpg',
+            title:'Why These Toasts with Tea are My New Favorite',
+            date:'By admin | March 25th,2019',
+        },
+        {
+            img: '/images/fi-street-food-200x132.jpg',
+            title: 'Exploring Street Food in Bangkok',
+            date:'By admin | March 25th,2019',
+        },
+        {
+            img: '/images/fi-organic-breakfast-200x132.jpg',
+            title: 'Organic Choices For HEaltier Living',
+            date:'By admin | March 25th,2019',
+        },
+        {
+            img: '/images/fi-water-side-rest-200x132.jpg',
+            title: ' 5 Waterside Reastaurant in Instanbul for SPecial Events',
+            date:'By admin | March 25th,2019',
+        },
+    ]
 });
