@@ -1,5 +1,5 @@
 <template>
-  <div class="container-lg">
+  <div class="container-lg my-footer">
     <LogoFooter />
     <LinksFooterVue />
     <AdressFooter />
@@ -23,4 +23,13 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.my-footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  * {
+    width: calc(100% / 4);
+  }
+}
+</style>

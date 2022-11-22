@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="logo">
     <img src="/images/avada-food-logo.png" alt="" />
     <section class="icons">
       <i class="fa-brands fa-facebook-f"></i>
@@ -15,11 +15,16 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-div {
-  width: calc(100% / 4);
-}
 .icons {
+  width: 70%;
+  padding-top: 1rem;
   display: flex;
   justify-content: space-around;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 </style>

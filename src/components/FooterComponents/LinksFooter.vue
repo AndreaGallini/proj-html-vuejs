@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="linksFooter">
     <ul>
       <li v-for="link in store.footerLinks">
         <a href="#">{{ link }}</a>
@@ -19,4 +19,24 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use "../../assets/partials/partials" as *;
+.linksFooter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-left: 1px dotted $iconColor;
+  padding-left: 2rem;
+}
+ul {
+  list-style: none;
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  li {
+    padding: 0.6rem 0;
+  }
+}
+</style>
