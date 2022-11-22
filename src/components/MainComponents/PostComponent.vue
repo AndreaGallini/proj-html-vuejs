@@ -45,13 +45,26 @@
       </section>
       <hr />
       <input type="text" placeholder="Search" />
+      <section class="follow-us">
+        <p>Follow Us</p>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </section>
+      <PopularComment />
     </div>
   </div>
 </template>
 
 <script>
+import PopularComment from "./PopularComment.vue";
 import { store } from "../../store";
 export default {
+  components: {
+    PopularComment,
+  },
   data() {
     return {
       store,
@@ -158,5 +171,21 @@ input {
   width: 100%;
   border: 1px solid $iconColor;
   height: 40px;
+}
+.follow-us {
+  p {
+    color: $brandColor;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+
+  i {
+    color: $grayIcon;
+
+    background-color: $iconColor;
+    padding: 0.25rem;
+    margin: 0 1rem;
+  }
 }
 </style>

@@ -104,5 +104,23 @@ export const store = reactive({
             title: ' 5 Waterside Reastaurant in Instanbul for SPecial Events',
             date:'By admin | March 25th,2019',
         },
-    ]
+    ],
+    commentArray: [
+                {
+            img: '/images/single-post-img3.jpg',
+            title: 'Food Corner: Top Japanese Restaurant for Sushi',
+            date:' March 25th,2019',
+        },
+        {
+            img: '/images/singapore-featured-image.jpg',
+            title: 'City Guide: Singapore',
+            date:'February 27th,2019',
+        },
+        {
+            img: '/images/slide1-bg-150x150.jpg',
+            title: '6 Nutritional Tips to Help Burn Body Fat',
+            date:'February 28th,2019',
+        },
+
+    ],
 });
