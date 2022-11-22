@@ -129,4 +129,13 @@ export const store = reactive({
       'images/r-rachel-park-366508-unsplash-min.jpg'  ,
       'images/r-michelle-tsang-500721-unsplash-min.jpg'  ,
     ],
+
+    footerLinks: [
+        'Recipes',
+        'Places',
+        'Blog',
+        'About',
+        'Contacs',
+      
+    ],
 });
