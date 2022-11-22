@@ -33,7 +33,6 @@ export default {
 .right,
 .left {
   width: 50%;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,6 +41,9 @@ export default {
   p {
     margin-bottom: 0;
   }
+}
+.left {
+  background-color: white;
 }
 .slider {
   display: flex;

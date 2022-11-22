@@ -35,6 +35,7 @@ img {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+  font-size: 18px;
   padding: 2rem 0;
 }
 .title::after,
@@ -69,5 +70,8 @@ img {
   background-color: white;
   left: 50%;
   translate: -50%;
+}
+h3 {
+  font-family: "Vidaloka", serif;
 }
 </style>

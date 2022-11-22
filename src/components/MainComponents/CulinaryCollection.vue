@@ -62,4 +62,8 @@ export default {
   padding-top: 20px;
   padding-bottom: 150px;
 }
+h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
 </style>

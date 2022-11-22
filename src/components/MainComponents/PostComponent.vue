@@ -147,6 +147,9 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
   }
 }
 .singapore {
@@ -159,6 +162,8 @@ img {
     color: white;
     padding: 0.5rem;
     top: 50%;
+    font-weight: 800;
+    font-size: 20px;
   }
   button {
     background-color: $brandColor;
@@ -194,5 +199,8 @@ input {
 }
 .post-container {
   padding-bottom: 3rem;
+}
+h3 {
+  font-family: "Vidaloka", serif;
 }
 </style>

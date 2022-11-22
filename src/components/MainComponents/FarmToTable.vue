@@ -41,4 +41,11 @@ button {
   text-transform: uppercase;
   font-weight: 700;
 }
+h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+p {
+  padding-bottom: 5rem;
+}
 </style>

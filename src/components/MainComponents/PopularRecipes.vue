@@ -104,4 +104,11 @@ button {
   text-transform: uppercase;
   font-weight: 700;
 }
+h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+h3 {
+  font-family: "Vidaloka", serif;
+}
 </style>

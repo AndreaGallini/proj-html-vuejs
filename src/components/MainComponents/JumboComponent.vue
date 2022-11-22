@@ -58,6 +58,7 @@ export default {};
   padding: 3rem;
   h2 {
     font-size: 50px;
+    font-family: "Vidaloka", serif;
   }
 }
 </style>
