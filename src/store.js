@@ -123,4 +123,10 @@ export const store = reactive({
         },
 
     ],
+    cardsJumboArray: [
+        'images/Yogurt-Nan.jpg' ,
+      'images/Mixed-fruits.jpg' , 
+      'images/r-rachel-park-366508-unsplash-min.jpg'  ,
+      'images/r-michelle-tsang-500721-unsplash-min.jpg'  ,
+    ],
 });

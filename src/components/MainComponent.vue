@@ -8,6 +8,8 @@
     <CulinaryCollection />
     <FarmToTable />
     <PostComponent />
+    <BottomJumbo />
+    <CardsJumbo />
   </div>
 </template>
 
@@ -18,6 +20,8 @@ import PopularRecipes from "./MainComponents/PopularRecipes.vue";
 import CulinaryCollection from "./MainComponents/CulinaryCollection.vue";
 import FarmToTable from "./MainComponents/FarmToTable.vue";
 import PostComponent from "./MainComponents/PostComponent.vue";
+import BottomJumbo from "./MainComponents/BottomJumbo.vue";
+import CardsJumbo from "./MainComponents/CardsJumbo.vue";
 
 export default {
   components: {
@@ -27,6 +31,8 @@ export default {
     CulinaryCollection,
     FarmToTable,
     PostComponent,
+    BottomJumbo,
+    CardsJumbo,
   },
 };
 </script>

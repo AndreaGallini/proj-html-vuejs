@@ -54,6 +54,7 @@
         <i class="fa-brands fa-pinterest-p"></i>
       </section>
       <PopularComment />
+      <TweetComponent />
     </div>
   </div>
 </template>
@@ -61,9 +62,11 @@
 <script>
 import PopularComment from "./PopularComment.vue";
 import { store } from "../../store";
+import TweetComponent from "./TweetComponent.vue";
 export default {
   components: {
     PopularComment,
+    TweetComponent,
   },
   data() {
     return {
@@ -188,5 +191,8 @@ input {
     padding: 0.25rem;
     margin: 0 1rem;
   }
+}
+.post-container {
+  padding-bottom: 3rem;
 }
 </style>
