@@ -30,7 +30,7 @@ export default {};
 }
 .right {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
 }
 button {
@@ -40,6 +40,9 @@ button {
   color: white;
   text-transform: uppercase;
   font-weight: 700;
+  &:hover {
+    background-color: $buttonHover;
+  }
 }
 h3 {
   text-transform: uppercase;

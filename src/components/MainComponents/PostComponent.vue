@@ -173,6 +173,9 @@ img {
     text-transform: uppercase;
     font-weight: 700;
     width: 100%;
+    &:hover {
+      background-color: $buttonHover;
+    }
   }
 }
 input {

@@ -33,6 +33,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use "../../assets/partials/partials" as *;
 .culinaryCollection {
   text-align: center;
   p {
@@ -43,8 +44,31 @@ export default {
 .culinary-card {
   background-color: white;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
   p {
     text-transform: uppercase;
+    background-color: transparent;
+    transition: all 0.5s;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    &:hover {
+      background-color: $buttonHover;
+      color: white;
+    }
+  }
+  img {
+    width: 40%;
+    transition: all 1s;
+    cursor: pointer;
+    &:hover {
+      width: 50%;
+    }
   }
 }
 .culinaryText {

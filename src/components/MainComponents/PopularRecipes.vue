@@ -98,11 +98,15 @@ img {
 button {
   background-color: $brandColor;
   border: 0;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+
   border-radius: 10px;
   color: white;
   text-transform: uppercase;
   font-weight: 700;
+  &:hover {
+    background-color: $buttonHover;
+  }
 }
 h2 {
   text-transform: uppercase;

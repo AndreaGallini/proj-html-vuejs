@@ -35,6 +35,7 @@ li {
     font-weight: bold;
     text-decoration: none;
     color: black;
+    transition: all 0.5s;
   }
 }
 a:hover {
