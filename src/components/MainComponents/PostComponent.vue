@@ -182,8 +182,9 @@ input {
 
   i {
     color: $grayIcon;
+    border: 0.5px solid $iconBackground;
 
-    background-color: $iconColor;
+    background-color: $iconBackground;
     padding: 0.25rem;
     margin: 0 1rem;
   }
