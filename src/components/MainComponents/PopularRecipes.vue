@@ -12,6 +12,17 @@
       <div class="left">
         <div class="col-12 my-card">
           <img src="/images/Yogurt-Nan-600x395.jpg" alt="" />
+          <div class="first_card__overlay">
+            <div class="first_overlay__text">
+              <span class="round">
+                <a href="#">
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </span>
+
+              <p>Lunch Favorite With Salad , Nann And Beans</p>
+            </div>
+          </div>
           <div class="card-text">
             <h3>Lunch Favorite With Salad , Nann And Beans</h3>
             <p>Bakery, Featured,Healthy, Latest Recipes,Staff Picks</p>
@@ -88,6 +99,7 @@ img {
 }
 .my-card {
   background-color: white;
+  position: relative;
 }
 .recipes {
   display: flex;
@@ -167,6 +179,10 @@ h3 {
     rgba(150, 51, 0, 0.8477766106442577) 85%
   );
 }
+
+.my-card:hover .first_card__overlay {
+  opacity: 1;
+}
 .my-card-6:hover .card__overlay {
   opacity: 1;
 }
@@ -178,6 +194,39 @@ h3 {
   a {
     text-decoration: none;
     color: $brandColor;
+  }
+}
+.first_card__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 427px;
+  width: 100%;
+  opacity: 0;
+  visibility: none;
+  transition: 0.5s ease;
+
+  background: rgb(255, 74, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 74, 0, 0.9094012605042017) 0%,
+    rgba(150, 51, 0, 0.8477766106442577) 85%
+  );
+}
+.first_overlay__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 427px;
+  p {
+    color: white;
+    font-family: "Vidaloka", serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 2rem;
   }
 }
 </style>

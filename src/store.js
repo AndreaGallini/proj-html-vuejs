@@ -145,7 +145,7 @@ export const store = reactive({
         },
         {
             img: '/images/fi-organic-breakfast-200x132.jpg',
-            title: 'Organic Choices For HEaltier Living',
+            title: 'Organic Choices For Healtier Living',
             date:'By admin | March 25th,2019',
         },
         {
@@ -173,10 +173,23 @@ export const store = reactive({
 
     ],
     cardsJumboArray: [
-        'images/Yogurt-Nan.jpg' ,
-      'images/Mixed-fruits.jpg' , 
-      'images/r-rachel-park-366508-unsplash-min.jpg'  ,
-      'images/r-michelle-tsang-500721-unsplash-min.jpg'  ,
+        {
+            img: 'images/Yogurt-Nan.jpg',
+            text:'Lunch Favourite with Salad, Naan and Beans',
+        },
+        {
+            img: 'images/Mixed-fruits.jpg',
+            text:'Fruit Platter with Banana,Mango,Berries and Orange',
+        },
+        {
+            img: 'images/r-rachel-park-366508-unsplash-min.jpg',
+            text:'Breakfast Delight With Strawberry, Egg and Fruit ',
+        },
+        {
+            img: 'images/r-michelle-tsang-500721-unsplash-min.jpg',
+            text:'Ice Cream HeaveWith Vanilla,Chocolate And Pistacchio',
+        },
+
     ],
 
     footerLinks: [

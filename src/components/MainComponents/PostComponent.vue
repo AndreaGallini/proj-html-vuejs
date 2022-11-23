@@ -2,7 +2,20 @@
   <div class="container-lg post-container">
     <div class="left">
       <div class="col-12 my-main-card">
-        <img src="/images/single-post-img3-600x395.jpg" alt="" />
+        <div class="over">
+          <img src="/images/single-post-img3-600x395.jpg" alt="" />
+          <div class="card__overlay">
+            <div class="overlay__text">
+              <span class="round">
+                <a href="#">
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </span>
+
+              <p>Food Corner: Top Japanese Resturants for Sushi</p>
+            </div>
+          </div>
+        </div>
         <div class="card-text">
           <h3>Food Corner: Top Japanese Resturants for Sushi</h3>
           <p>By admin | March 25,2019</p>
@@ -24,7 +37,21 @@
       </div>
       <div class="posts">
         <div class="my-card" v-for="card in store.PostsArray">
-          <img :src="card.img" alt="" />
+          <section class="over_post">
+            <img :src="card.img" alt="" />
+            <div class="post__overlay">
+              <div class="post__text">
+                <span class="round">
+                  <a href="#">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </span>
+
+                <p>{{ card.title }}</p>
+              </div>
+            </div>
+          </section>
+
           <h3>{{ card.title }}</h3>
           <p>{{ card.date }}</p>
         </div>
@@ -205,5 +232,106 @@ input {
 }
 h3 {
   font-family: "Vidaloka", serif;
+}
+.over {
+  position: relative;
+  .card__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: none;
+    transition: 0.5s ease;
+
+    background: rgb(255, 74, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 74, 0, 0.9094012605042017) 0%,
+      rgba(150, 51, 0, 0.8477766106442577) 85%
+    );
+  }
+  &:hover .card__overlay {
+    opacity: 1;
+  }
+
+  .overlay__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    p {
+      color: white;
+      font-family: "Vidaloka", serif;
+      font-weight: bold;
+      font-size: 25px;
+      padding-top: 2rem;
+    }
+  }
+
+  .round {
+    background-color: white;
+    padding: 0.75rem;
+    border-radius: 50%;
+    color: $brandColor;
+    a {
+      text-decoration: none;
+      color: $brandColor;
+    }
+  }
+}
+
+.post__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: none;
+  transition: 0.5s ease;
+
+  background: rgb(255, 74, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 74, 0, 0.9094012605042017) 0%,
+    rgba(150, 51, 0, 0.8477766106442577) 85%
+  );
+}
+.over_post {
+  position: relative;
+  &:hover .post__overlay {
+    opacity: 1;
+  }
+}
+.round {
+  background-color: white;
+  padding: 0.75rem;
+  border-radius: 50%;
+  color: $brandColor;
+  a {
+    text-decoration: none;
+    color: $brandColor;
+  }
+}
+.post__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  p {
+    color: white;
+    font-family: "Vidaloka", serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 2rem;
+  }
 }
 </style>
