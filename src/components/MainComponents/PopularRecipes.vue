@@ -21,7 +21,7 @@
                   </a>
                 </span>
 
-                <p>Lunch Favorite With Salad , Naan And Beans</p>
+                <p>Lunch Favourite With Salad , Naan And Beans</p>
               </div>
             </div>
           </section>

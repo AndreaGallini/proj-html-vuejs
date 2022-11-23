@@ -15,17 +15,17 @@ export const store = reactive({
     foodieJournalArray: [
         {
             image: '/images/single-post-img3-600x395.jpg',
-            title:'Food Corner: Top Japanese Resturants for Sushi',
+            title:'Food Corner: Top Japanese Restaurants for Sushi',
             date:'By admin | March 25th,2019',
         },
               {
             image: '/images/fi-roundup-600x395.jpg',
-            title:'Roundup : My New Favorite Recipes For Healthy Living',
+            title:'Roundup : My New Favourite Recipes For Healthy Living',
             date:'By admin | March 25th,2019',
         }  ,
               {
             image: '/images/fi-toasts-600x395.jpg',
-            title:'Why These Toasts with Tea are My New Favorite',
+            title:'Why These Toasts with Tea are My New Favourite',
             date:'By admin | March 25th,2019',
       }          
 
@@ -126,7 +126,7 @@ export const store = reactive({
     PostsArray: [
         {
             img: '/images/fi-roundup.jpg',
-            title: 'Roundup : My new Favorite recipes for healthy living',
+            title: 'Roundup : My new Favourite Recipes For Healthy Living',
             date:'By admin | March 25th, 2019',
         },
         {
@@ -136,7 +136,7 @@ export const store = reactive({
         },
         {
             img: '/images/fi-toasts.jpg',
-            title:'Why These Toasts with Tea are My New Favorite',
+            title:'Why These Toasts with Tea are My New Favourite',
             date:'By admin | March 25th,2019',
         },
         {
@@ -146,19 +146,19 @@ export const store = reactive({
         },
         {
             img: '/images/fi-organic-breakfast.jpg',
-            title: 'Organic Choices For Healtier Living',
+            title: 'Organic Choices For Healthier Living',
             date:'By admin | March 25th,2019',
         },
         {
             img: '/images/fi-water-side-rest.jpg',
-            title: ' 5 Waterside Restaurant in Instanbul for Special Events',
+            title: ' 5 Waterside Restaurants in Istanbul for Special Events',
             date:'By admin | March 25th,2019',
         },
     ],
     commentPopularArray: [
                 {
             img: '/images/single-post-img3.jpg',
-            title: 'Food Corner: Top Japanese Restaurant for Sushi',
+            title: 'Food Corner: Top Japanese Restaurants for Sushi',
             date:' March 25th,2019',
         },
         {
@@ -205,17 +205,17 @@ export const store = reactive({
     commentRecentArray: [
                         {
             img: '/images/single-post-img3.jpg',
-            title: 'Food Corner: Top Japanese Restaurant for Sushi',
+            title: 'Food Corner: Top Japanese Restaurants for Sushi',
             date:' March 25th,2019',
         },
         {
             img: '/images/fi-roundup.jpg',
-            title: 'Roundup : My new Favorite reciper for healthy living',
+            title: 'Roundup : My new Favourite recipes for Healthy Living',
             date:'March 25th, 2019',
         },
         {
             img: '/images/fi-korean-food.jpg',
-            title: 'Meal Prep : Korean Bibimbap with Kinchi',
+            title: 'Meal Prep : Korean Bibimbap with Kimchi',
             date:'March 25th,2019',
         }
         

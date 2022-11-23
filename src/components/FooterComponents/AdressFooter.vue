@@ -1,6 +1,6 @@
 <template>
   <div class="contacts">
-    <p class="title">contacts</p>
+    <p class="title">contacts us</p>
     <ul>
       <li>
         <i class="fa-solid fa-location-dot"></i>

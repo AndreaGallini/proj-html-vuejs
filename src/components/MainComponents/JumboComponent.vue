@@ -3,7 +3,7 @@
     <div class="card-jumbo">
       <p class="jumbo-title">today's pick</p>
       <div class="jumbo-text">
-        <h2>Food Corner: Top Japanese Resturants for Sushi</h2>
+        <h2>Food Corner: Top Japanese Restaurants for Sushi</h2>
         <p>March 25,2019</p>
       </div>
     </div>

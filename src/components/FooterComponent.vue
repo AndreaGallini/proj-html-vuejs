@@ -5,6 +5,7 @@
     <AdressFooter />
     <StoreFooter />
   </div>
+  <FooterBottom />
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import LogoFooter from "./FooterComponents/LogoFooter.vue";
 import LinksFooterVue from "./FooterComponents/LinksFooter.vue";
 import AdressFooter from "./FooterComponents/AdressFooter.vue";
 import StoreFooter from "./FooterComponents/StoreFooter.vue";
+import FooterBottom from "./FooterComponents/FooterBottom.vue";
 
 export default {
   components: {
@@ -19,6 +21,7 @@ export default {
     LinksFooterVue,
     AdressFooter,
     StoreFooter,
+    FooterBottom,
   },
 };
 </script>

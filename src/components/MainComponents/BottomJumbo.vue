@@ -6,7 +6,7 @@
       ducimus explicabo cum obcaecati adipisci tempora.
     </p>
     <section class="emailsub">
-      <input type="text" placeholder="Insert Your email" />
+      <input type="text" placeholder="Insert Your email...*" />
       <button>subscribe</button>
     </section>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
