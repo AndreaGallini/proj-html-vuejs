@@ -71,7 +71,7 @@
         </button>
       </section>
       <hr />
-      <input type="text" placeholder="Search" />
+      <input type="text" placeholder="Search" v-model="store.filterComment" />
       <section class="follow-us">
         <p>Follow Us</p>
         <i class="fa-brands fa-facebook-f"></i>
@@ -232,6 +232,11 @@ input {
 }
 h3 {
   font-family: "Vidaloka", serif;
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover {
+    color: $brandColor;
+  }
 }
 .over {
   position: relative;

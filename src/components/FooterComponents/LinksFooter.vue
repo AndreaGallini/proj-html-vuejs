@@ -34,6 +34,13 @@ ul {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    border-right: 2px solid transparent;
+    transition: all 0.5s;
+    &:hover {
+      color: $brandColor;
+      border-right: 2px solid $brandColor;
+      padding-right: 10rem;
+    }
   }
   li {
     padding: 0.6rem 0;

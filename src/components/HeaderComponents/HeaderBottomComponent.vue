@@ -36,6 +36,7 @@ li {
     text-decoration: none;
     color: black;
     transition: all 0.5s;
+    border-bottom: 2px solid transparent;
   }
 }
 a:hover {

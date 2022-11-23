@@ -1,14 +1,14 @@
 <template>
   <div class="slider">
-    <section class="left">
+    <section class="left" @click="store.changeCommentPopularArray">
       <p>Popular</p>
     </section>
-    <section class="right">
+    <section class="right" @click="store.changeCommentRecentArray">
       <p>Recent</p>
     </section>
   </div>
   <div class="comment">
-    <div class="my-card flex" v-for="card in store.commentArray">
+    <div class="my-card flex" v-for="card in store.commentArrayNew">
       <img :src="card.img" alt="" />
       <section class="text">
         <p>{{ card.title }}</p>
@@ -26,10 +26,14 @@ export default {
       store,
     };
   },
+  mounted() {
+    store.inizioComment();
+  },
 };
 </script>
 
 <style lang="scss" scoped>
+@use "../../assets/partials/partials" as *;
 .right,
 .left {
   width: 50%;
@@ -38,13 +42,15 @@ export default {
   align-items: center;
   height: 50px;
   text-align: center;
+  cursor: pointer;
+  &:hover {
+    color: $brandColor;
+  }
   p {
     margin-bottom: 0;
   }
 }
-.left {
-  background-color: white;
-}
+
 .slider {
   display: flex;
   margin-top: 2rem;

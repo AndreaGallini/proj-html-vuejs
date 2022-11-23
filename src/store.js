@@ -1,5 +1,6 @@
 import { reactive } from "vue";
 export const store = reactive({
+    
 
  navbarArray : [
         'Home',
@@ -124,37 +125,37 @@ export const store = reactive({
     ],
     PostsArray: [
         {
-            img: '/images/fi-roundup-200x132.jpg',
+            img: '/images/fi-roundup.jpg',
             title: 'Roundup : My new Favorite reciper for healthy living',
             date:'By admin | March 25th, 2019',
         },
         {
-            img: '/images/fi-korean-food-200x132.jpg',
+            img: '/images/fi-korean-food.jpg',
             title: 'Meal Prep : Korean Bibimbap with Kinchi',
             date:'By admin | March 25th, 2019',
         },
         {
-            img: '/images/fi-toasts-600x395.jpg',
+            img: '/images/fi-toasts.jpg',
             title:'Why These Toasts with Tea are My New Favorite',
             date:'By admin | March 25th,2019',
         },
         {
-            img: '/images/fi-street-food-200x132.jpg',
+            img: '/images/fi-street-food.jpg',
             title: 'Exploring Street Food in Bangkok',
             date:'By admin | March 25th,2019',
         },
         {
-            img: '/images/fi-organic-breakfast-200x132.jpg',
+            img: '/images/fi-organic-breakfast.jpg',
             title: 'Organic Choices For Healtier Living',
             date:'By admin | March 25th,2019',
         },
         {
-            img: '/images/fi-water-side-rest-200x132.jpg',
+            img: '/images/fi-water-side-rest.jpg',
             title: ' 5 Waterside Reastaurant in Instanbul for SPecial Events',
             date:'By admin | March 25th,2019',
         },
     ],
-    commentArray: [
+    commentPopularArray: [
                 {
             img: '/images/single-post-img3.jpg',
             title: 'Food Corner: Top Japanese Restaurant for Sushi',
@@ -200,4 +201,42 @@ export const store = reactive({
         'Contacs',
       
     ],
+    commentArrayNew: [],
+    commentRecentArray: [
+                        {
+            img: '/images/single-post-img3.jpg',
+            title: 'Food Corner: Top Japanese Restaurant for Sushi',
+            date:' March 25th,2019',
+        },
+        {
+            img: '/images/fi-roundup.jpg',
+            title: 'Roundup : My new Favorite reciper for healthy living',
+            date:'March 25th, 2019',
+        },
+        {
+            img: '/images/fi-korean-food.jpg',
+            title: 'Meal Prep : Korean Bibimbap with Kinchi',
+            date:'March 25th,2019',
+        }
+        
+    ],
+   
+
+    changeCommentRecentArray() {
+        
+            this.commentArrayNew = [],
+                this.commentArrayNew = [...this.commentRecentArray]
+            console.log(this.commentArrayNew)
+    },
+    changeCommentPopularArray() {
+                    
+            this.commentArrayNew = [],
+                this.commentArrayNew = [...this.commentPopularArray]
+                    console.log(this.commentArrayNew)
+    },
+    inizioComment() {
+        this.commentArrayNew = [...this.commentPopularArray]  
+        console.log(this.commentArrayNew)
+    },
+   
 });
