@@ -69,7 +69,10 @@ export default {
 }
 .round {
   background-color: white;
-  padding: 0.75rem;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
   border-radius: 50%;
   color: $brandColor;
   a {
