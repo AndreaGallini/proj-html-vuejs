@@ -3,21 +3,23 @@
     <h2 class="title">Foodie journal</h2>
     <section class="row">
       <div class="my-cards" v-for="(card, id) in store.foodieJournalArray">
-        <img :src="card.image" alt="" />
+        <section class="over">
+          <img :src="card.image" alt="" />
+          <div class="card__overlay">
+            <div class="overlay__text">
+              <span class="round">
+                <a href="#">
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </span>
+
+              <p>{{ card.title }}</p>
+            </div>
+          </div>
+        </section>
 
         <h3>{{ card.title }}</h3>
         <p>{{ card.date }}</p>
-        <div class="card__overlay">
-          <div class="overlay__text">
-            <span class="round">
-              <a href="#">
-                <i class="fa-solid fa-link"></i>
-              </a>
-            </span>
-
-            <p>{{ card.title }}</p>
-          </div>
-        </div>
       </div>
     </section>
   </div>
@@ -78,6 +80,7 @@ img {
   img {
     position: relative;
     width: 100%;
+    height: 100%;
   }
 }
 .my-container {
@@ -94,10 +97,10 @@ h3 {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0.75rem;
+  left: 0;
   right: 0;
-  height: 273px;
-  width: calc(100% - 1.5rem);
+  height: 100%;
+  width: 100%;
   opacity: 0;
   visibility: none;
   transition: 0.5s ease;
@@ -123,7 +126,11 @@ h3 {
     padding: 1rem 1rem;
   }
 }
-.my-cards:hover .card__overlay {
+.over {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.over:hover .card__overlay {
   opacity: 1;
 }
 .round {

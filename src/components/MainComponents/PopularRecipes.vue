@@ -11,18 +11,21 @@
     <div class="recipes">
       <div class="left">
         <div class="col-12 my-card">
-          <img src="/images/Yogurt-Nan-600x395.jpg" alt="" />
-          <div class="first_card__overlay">
-            <div class="first_overlay__text">
-              <span class="round">
-                <a href="#">
-                  <i class="fa-solid fa-link"></i>
-                </a>
-              </span>
+          <section class="over">
+            <img src="/images/Yogurt-Nan-600x395.jpg" alt="" />
+            <div class="first_card__overlay">
+              <div class="first_overlay__text">
+                <span class="round">
+                  <a href="#">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </span>
 
-              <p>Lunch Favorite With Salad , Nann And Beans</p>
+                <p>Lunch Favorite With Salad , Nann And Beans</p>
+              </div>
             </div>
-          </div>
+          </section>
+
           <div class="card-text">
             <h3>Lunch Favorite With Salad , Nann And Beans</h3>
             <p>Bakery, Featured,Healthy, Latest Recipes,Staff Picks</p>
@@ -179,8 +182,10 @@ h3 {
     rgba(150, 51, 0, 0.8477766106442577) 85%
   );
 }
-
-.my-card:hover .first_card__overlay {
+.over {
+  position: relative;
+}
+.over:hover .first_card__overlay {
   opacity: 1;
 }
 .my-card-6:hover .card__overlay {
