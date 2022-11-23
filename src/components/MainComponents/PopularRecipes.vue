@@ -21,13 +21,13 @@
                   </a>
                 </span>
 
-                <p>Lunch Favorite With Salad , Nann And Beans</p>
+                <p>Lunch Favorite With Salad , Naan And Beans</p>
               </div>
             </div>
           </section>
 
           <div class="card-text">
-            <h3>Lunch Favorite With Salad , Nann And Beans</h3>
+            <h3>Lunch Favorite With Salad , Naan And Beans</h3>
             <p>Bakery, Featured,Healthy, Latest Recipes,Staff Picks</p>
             <hr />
             <p>

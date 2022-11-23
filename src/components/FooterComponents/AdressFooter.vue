@@ -26,6 +26,11 @@ export default {};
 
 <style lang="scss" scoped>
 @use "../../assets/partials/partials" as *;
+
+i {
+  color: $brandColor;
+}
+
 .title {
   color: $brandColor;
   text-transform: uppercase;

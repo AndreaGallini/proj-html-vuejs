@@ -20,7 +20,7 @@ export const store = reactive({
         },
               {
             image: '/images/fi-roundup-600x395.jpg',
-            title:'Roundup : My New Favorite Recipes FOr Healty Living',
+            title:'Roundup : My New Favorite Recipes For Healthy Living',
             date:'By admin | March 25th,2019',
         }  ,
               {
@@ -108,7 +108,7 @@ export const store = reactive({
         },
         {
             image: '/images/healthy-recipes.png',
-            title:'healty',
+            title:'healthy',
         },
         {
             image: '/images/staff-picks.png',
@@ -126,12 +126,12 @@ export const store = reactive({
     PostsArray: [
         {
             img: '/images/fi-roundup.jpg',
-            title: 'Roundup : My new Favorite reciper for healthy living',
+            title: 'Roundup : My new Favorite recipes for healthy living',
             date:'By admin | March 25th, 2019',
         },
         {
             img: '/images/fi-korean-food.jpg',
-            title: 'Meal Prep : Korean Bibimbap with Kinchi',
+            title: 'Meal Prep : Korean Bibimbap with Kimchi',
             date:'By admin | March 25th, 2019',
         },
         {
@@ -151,7 +151,7 @@ export const store = reactive({
         },
         {
             img: '/images/fi-water-side-rest.jpg',
-            title: ' 5 Waterside Reastaurant in Instanbul for SPecial Events',
+            title: ' 5 Waterside Restaurant in Instanbul for Special Events',
             date:'By admin | March 25th,2019',
         },
     ],

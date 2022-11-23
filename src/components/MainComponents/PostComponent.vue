@@ -67,7 +67,7 @@
         <img src="/images/singapore-featured-image.jpg" alt="" />
         <p>City Guide : Singapore</p>
         <button>
-          <i class="fa-solid fa-earth-americas"></i> View All City guide
+          <i class="fa-solid fa-earth-americas"></i> View All City guides
         </button>
       </section>
       <hr />
@@ -176,7 +176,7 @@ img {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 .singapore {
@@ -185,7 +185,7 @@ img {
   position: relative;
   p {
     position: absolute;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.65);
     color: white;
     padding: 0.5rem;
     top: 50%;

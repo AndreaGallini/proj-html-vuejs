@@ -1,6 +1,6 @@
 <template>
   <div class="secondaryJumbo">
-    <h3>Subscribe <span>&</span> Receive a free Eboook</h3>
+    <h3>Subscribe <span class="orange">&</span> Receive A Free eBook</h3>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
       ducimus explicabo cum obcaecati adipisci tempora.
@@ -20,6 +20,9 @@ export default {};
 <style lang="scss" scoped>
 @use "../../assets/partials/partials" as *;
 
+.orange {
+  color: $brandColor;
+}
 .secondaryJumbo {
   background-color: white;
   background-image: url(/images/subscribe-sec-bg.png);
