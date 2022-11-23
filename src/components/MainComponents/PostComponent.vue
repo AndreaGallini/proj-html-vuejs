@@ -209,6 +209,9 @@ input {
   width: 100%;
   border: 1px solid $iconColor;
   height: 40px;
+  &:hover {
+    border: 2px solid $brandColor;
+  }
 }
 .follow-us {
   p {
@@ -252,12 +255,8 @@ h3 {
     visibility: none;
     transition: 0.5s ease;
 
-    background: rgb(255, 74, 0);
-    background: linear-gradient(
-      0deg,
-      rgba(255, 74, 0, 0.9094012605042017) 0%,
-      rgba(150, 51, 0, 0.8477766106442577) 85%
-    );
+    background: $backgroundOver;
+    background: $backgroundLinear;
   }
   &:hover .card__overlay {
     opacity: 1;
@@ -305,12 +304,8 @@ h3 {
   visibility: none;
   transition: 0.5s ease;
 
-  background: rgb(255, 74, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 74, 0, 0.9094012605042017) 0%,
-    rgba(150, 51, 0, 0.8477766106442577) 85%
-  );
+  background: $backgroundOver;
+  background: $backgroundLinear;
 }
 .over_post {
   position: relative;
@@ -320,7 +315,10 @@ h3 {
 }
 .round {
   background-color: white;
-  padding: 0.75rem;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
   border-radius: 50%;
   color: $brandColor;
   a {

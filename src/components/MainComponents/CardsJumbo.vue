@@ -57,12 +57,8 @@ export default {
   visibility: none;
   transition: 0.5s ease;
 
-  background: rgb(255, 74, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 74, 0, 0.9094012605042017) 0%,
-    rgba(150, 51, 0, 0.8477766106442577) 85%
-  );
+  background: $backgroundOver;
+  background: $backgroundLinear;
 }
 .over:hover .card__overlay {
   opacity: 1;

@@ -47,18 +47,20 @@
       </div>
       <div class="right">
         <div class="my-card-6" v-for="cards in store.popularRecipes">
-          <img :src="cards.img" alt="" />
-          <div class="card__overlay">
-            <div class="overlay__text">
-              <span class="round">
-                <a :href="cards.link">
-                  <i class="fa-solid fa-link"></i>
-                </a>
-              </span>
+          <section class="over2">
+            <img :src="cards.img" alt="" />
+            <div class="card__overlay">
+              <div class="overlay__text">
+                <span class="round">
+                  <a :href="cards.link">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+                </span>
 
-              <p>{{ cards.testo }}</p>
+                <p>{{ cards.testo }}</p>
+              </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
@@ -142,7 +144,6 @@ h3 {
   font-family: "Vidaloka", serif;
 }
 .my-card-6 {
-  position: relative;
   width: calc((100% - 1rem) / 2);
   display: flex;
   flex-direction: column;
@@ -163,33 +164,24 @@ h3 {
     font-size: 18px;
   }
 }
+.over2 {
+  position: relative;
+}
 .card__overlay {
   position: absolute;
-  top: 1rem;
-  bottom: 1rem;
-  left: 1rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
   right: 0;
-  height: calc(100% - 2rem);
-  width: calc(100% - 2rem);
+  height: 100%;
+  width: 100%;
   opacity: 0;
   visibility: none;
   transition: 0.5s ease;
+  padding: 0;
 
-  background: rgb(255, 74, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 74, 0, 0.9094012605042017) 0%,
-    rgba(150, 51, 0, 0.8477766106442577) 85%
-  );
-}
-.over {
-  position: relative;
-}
-.over:hover .first_card__overlay {
-  opacity: 1;
-}
-.my-card-6:hover .card__overlay {
-  opacity: 1;
+  background: $backgroundOver;
+  background: $backgroundLinear;
 }
 .round {
   background-color: white;
@@ -204,6 +196,16 @@ h3 {
     color: $brandColor;
   }
 }
+.over {
+  position: relative;
+}
+.over:hover .first_card__overlay {
+  opacity: 1;
+}
+.over2:hover .card__overlay {
+  opacity: 1;
+}
+
 .first_card__overlay {
   position: absolute;
   top: 0;
@@ -216,12 +218,8 @@ h3 {
   visibility: none;
   transition: 0.5s ease;
 
-  background: rgb(255, 74, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 74, 0, 0.9094012605042017) 0%,
-    rgba(150, 51, 0, 0.8477766106442577) 85%
-  );
+  background: $backgroundOver;
+  background: $backgroundLinear;
 }
 .first_overlay__text {
   display: flex;
@@ -235,6 +233,20 @@ h3 {
     font-weight: bold;
     font-size: 25px;
     padding-top: 2rem;
+  }
+}
+.overlay__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  p {
+    color: white;
+    font-family: "Vidaloka", serif;
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 1rem;
   }
 }
 </style>

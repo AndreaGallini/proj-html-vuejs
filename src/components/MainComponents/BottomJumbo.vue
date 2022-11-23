@@ -42,11 +42,17 @@ button {
   color: white;
   text-transform: uppercase;
   font-weight: 700;
+  &:hover {
+    background-color: $buttonHover;
+  }
 }
 input {
   height: 49px;
   width: 600px;
   margin-right: 1.5rem;
+  &:hover {
+    border: 2px solid $brandColor;
+  }
 }
 .emailsub {
   margin: 2rem 0;
