@@ -56,9 +56,14 @@ export default {};
   flex-wrap: wrap;
   text-align: center;
   padding: 3rem;
+  cursor: pointer;
   h2 {
     font-size: 50px;
     font-family: "Vidaloka", serif;
+    transition: all 0.5s;
+    &:hover {
+      color: $brandColor;
+    }
   }
 }
 </style>

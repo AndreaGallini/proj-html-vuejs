@@ -32,8 +32,19 @@
         </div>
       </div>
       <div class="right">
-        <div class="col-6" v-for="cards in store.popularRecipes">
-          <img :src="cards" alt="" />
+        <div class="my-card-6" v-for="cards in store.popularRecipes">
+          <img :src="cards.img" alt="" />
+          <div class="card__overlay">
+            <div class="overlay__text">
+              <span class="round">
+                <a :href="cards.link">
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </span>
+
+              <p>{{ cards.testo }}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -86,7 +97,7 @@ img {
   flex-wrap: wrap;
   padding: 0 2rem;
   div {
-    padding: 0.5rem;
+    padding: 1rem;
     img {
       width: 100%;
     }
@@ -114,5 +125,59 @@ h2 {
 }
 h3 {
   font-family: "Vidaloka", serif;
+}
+.my-card-6 {
+  position: relative;
+  width: calc((100% - 1rem) / 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  i {
+    margin-bottom: 2rem;
+  }
+  p {
+    color: white;
+    font-family: "Vidaloka", serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+.card__overlay {
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  right: 0;
+  height: calc(100% - 2rem);
+  width: calc(100% - 2rem);
+  opacity: 0;
+  visibility: none;
+  transition: 0.5s ease;
+
+  background: rgb(255, 74, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 74, 0, 0.9094012605042017) 0%,
+    rgba(150, 51, 0, 0.8477766106442577) 85%
+  );
+}
+.my-card-6:hover .card__overlay {
+  opacity: 1;
+}
+.round {
+  background-color: white;
+  padding: 0.75rem;
+  border-radius: 50%;
+  color: $brandColor;
+  a {
+    text-decoration: none;
+    color: $brandColor;
+  }
 }
 </style>

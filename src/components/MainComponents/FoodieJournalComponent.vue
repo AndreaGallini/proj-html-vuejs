@@ -2,13 +2,22 @@
   <div class="container-lg my-container">
     <h2 class="title">Foodie journal</h2>
     <section class="row">
-      <div
-        class="col-4 my-cards"
-        v-for="(card, id) in store.foodieJournalArray"
-      >
+      <div class="my-cards" v-for="(card, id) in store.foodieJournalArray">
         <img :src="card.image" alt="" />
+
         <h3>{{ card.title }}</h3>
         <p>{{ card.date }}</p>
+        <div class="card__overlay">
+          <div class="overlay__text">
+            <span class="round">
+              <a href="#">
+                <i class="fa-solid fa-link"></i>
+              </a>
+            </span>
+
+            <p>{{ card.title }}</p>
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -26,6 +35,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use "../../assets/partials/partials" as *;
 img {
   width: 100%;
   margin-bottom: 10px;
@@ -63,6 +73,12 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  width: calc(100% / 3);
+  img {
+    position: relative;
+    width: 100%;
+  }
 }
 .my-container {
   position: absolute;
@@ -73,5 +89,51 @@ img {
 }
 h3 {
   font-family: "Vidaloka", serif;
+}
+.card__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0.75rem;
+  right: 0;
+  height: 273px;
+  width: calc(100% - 1.5rem);
+  opacity: 0;
+  visibility: none;
+  transition: 0.5s ease;
+
+  background: rgb(255, 74, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 74, 0, 0.9094012605042017) 0%,
+    rgba(150, 51, 0, 0.8477766106442577) 85%
+  );
+}
+.overlay__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 273px;
+  color: white;
+  p {
+    font-family: "Vidaloka", serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 1rem 1rem;
+  }
+}
+.my-cards:hover .card__overlay {
+  opacity: 1;
+}
+.round {
+  background-color: white;
+  padding: 0.75rem;
+  border-radius: 50%;
+  color: $brandColor;
+  a {
+    text-decoration: none;
+    color: $brandColor;
+  }
 }
 </style>

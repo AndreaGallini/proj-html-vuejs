@@ -30,14 +30,63 @@ export const store = reactive({
 
     ],
     popularRecipes: [
-        '/images/Mixed-fruits-460x295.jpg',
-        '/images/r-rachel-park-366508-unsplash-min-460x295.jpg',
-        '/images/r-michelle-tsang-500721-unsplash-min-460x295.jpg',
-        '/images/quick-summer-drink-460x295.jpg',
-        '/images/r-maarten-van-den-heuvel-400626-unsplash-min-460x295.jpg',
-        '/images/perfect-cosmopolitan-460x295.jpg',
-        '/images/r-brooke-lark-96398-unsplash-min-460x295.jpg',
-        '/images/fi2x-6-460x295.jpg',
+        {
+            img: '/images/Mixed-fruits-460x295.jpg',
+            testo: 'Fruit Platter with Banana,Mango,Berries and Orange',
+            link:'https://avada.theme-fusion.com/food/recipes/fruit-platter-with-banana-mango-berries-and-orange/',
+
+
+        },
+        {
+            img: '/images/r-rachel-park-366508-unsplash-min-460x295.jpg',
+            testo: 'Breakfast Delight With STrawberry, Egg And Fruit',
+            link:'https://avada.theme-fusion.com/food/recipes/breakfast-delight-with-strawberry-egg-and-fruit/',
+
+
+        },
+        {
+            img: '/images/r-michelle-tsang-500721-unsplash-min-460x295.jpg',
+            testo: 'Ice Cream HeaveWith Vanilla,Chocolate And Pistacchio',
+            link:'https://avada.theme-fusion.com/food/recipes/ice-cream-heaven-with-vanilla-chocolate-and-pistachio/',
+
+
+        },
+        {
+            img: '/images/quick-summer-drink-460x295.jpg',
+            testo: 'Video Recipe: How to Make a Cool Summer Drink',
+            link:'https://avada.theme-fusion.com/food/recipes/video-recipe-how-to-make-a-cool-summer-drink/',
+
+
+        },
+        {
+            img: '/images/r-maarten-van-den-heuvel-400626-unsplash-min-460x295.jpg',
+            testo: 'Ketogenic Diet Recipe with Avocado',
+            link:'https://avada.theme-fusion.com/food/recipes/ketogenic-diet-recipe-with-avocado/',
+
+
+        },
+        {
+            img: '/images/perfect-cosmopolitan-460x295.jpg',
+            testo: 'Video Recipe : The Perfect Cosmopolitan',
+            link:'https://avada.theme-fusion.com/food/recipes/video-recipe-the-perfect-cosmopolitan/',
+
+
+        },
+        {
+            img: '/images/r-brooke-lark-96398-unsplash-min-460x295.jpg',
+            testo: 'Summer Cheese Platter with Berries, Crackers and Wine',
+            link:'https://avada.theme-fusion.com/food/recipes/summer-cheese-platter-with-berries-crackers-and-wine/',
+
+
+        },
+        {
+            img: '/images/fi2x-6-460x295.jpg',
+            testo: 'Strawberyy Fruit Pies Served With Tea',
+            link:'https://avada.theme-fusion.com/food/recipes/strawberry-fruit-pies-served-with-tea/',
+
+
+        },
+
     ],
     culinaryCollection: [
         {
