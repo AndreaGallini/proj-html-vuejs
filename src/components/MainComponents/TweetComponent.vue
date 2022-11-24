@@ -130,6 +130,7 @@ h3 {
   }
   input {
     width: 100%;
+    height: 40px;
   }
   h6 {
     margin-bottom: 0;
