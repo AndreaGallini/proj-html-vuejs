@@ -37,13 +37,35 @@
       </section>
     </section>
   </div>
+  <div class="addnewpost">
+    <p>Add New Post</p>
+    <h6>Add Post Image</h6>
+    <input type="text" placeholder="Post Image" v-model="store.imgpost" />
+    <h6>Add Post Description</h6>
+    <input
+      type="text"
+      placeholder="Post Description"
+      v-model="store.textpost"
+    />
+    <h6>Add Post Date</h6>
+    <input type="text" placeholder="Add Post Date" v-model="store.datepost" />
+    <button @click="store.addUserPost">Write your Post</button>
+  </div>
 </template>
 
 <script>
-export default {};
+import { store } from "../../store";
+export default {
+  data() {
+    return {
+      store,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
+@use "../../assets/partials/partials" as *;
 .title {
   display: flex;
   align-items: center;
@@ -96,5 +118,38 @@ h3 {
 }
 .tag {
   font-size: 12px;
+}
+.addnewpost {
+  display: flex;
+  flex-direction: column;
+  p {
+    color: $brandColor;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+  input {
+    width: 100%;
+  }
+  h6 {
+    margin-bottom: 0;
+    padding-top: 1rem;
+    color: $brandColor;
+    font-weight: bold;
+  }
+  button {
+    margin-top: 1rem;
+    background-color: $brandColor;
+    border: 0;
+    padding: 0.5rem 1rem;
+
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    &:hover {
+      background-color: $buttonHover;
+    }
+  }
 }
 </style>

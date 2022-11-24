@@ -220,6 +220,32 @@ export const store = reactive({
         }
         
     ],
+    dateuser: '',
+    imguser: '',
+    commentuser: '',
+        datepost: '',
+    imgpost: '',
+    textpost: '',
+    addUserComment() {
+        let usercomment = {
+            img: this.imguser,
+            title: this.commentuser,
+            date:this.dateuser
+        }
+        console.log(usercomment)
+        this.commentRecentArray.push(usercomment)
+        console.log(this.commentRecentArray)
+    },
+        addUserPost() {
+        let post = {
+            img: this.imgpost,
+            title: this.textpost,
+            date:this.datepost
+        }
+        console.log(post)
+        this.PostsArray.push(post)
+        console.log(this.PostsArray)
+    },
 
    
 
